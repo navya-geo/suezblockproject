@@ -502,7 +502,7 @@
         map.addLayer({id:'ship-glow-layer',type:'circle',source:'ship-marker',paint:{'circle-radius':22,'circle-color':'#E8A020','circle-opacity':0,'circle-blur':1}});
         map.addLayer({id:'ship-icon-layer',type:'circle',source:'ship-marker',paint:{'circle-radius':7,'circle-color':'#E8A020','circle-stroke-width':2.5,'circle-stroke-color':'#ffffff','circle-opacity':0,'circle-stroke-opacity':0}});
 
-        map.addModel('evergiven-model','evergiven.glb');
+        map.addModel('evergiven-model','https://cdn.jsdelivr.net/gh/navya-geo/suezblockproject@main/evergiven.glb');
         map.addSource('evergiven-3d-src',{type:'geojson',data:{type:'Feature',geometry:{type:'Point',coordinates:[32.57985,30.0173]}}});
         map.addLayer({id:'evergiven-3d-layer',type:'model',source:'evergiven-3d-src',layout:{'model-id':'evergiven-model'},paint:{'model-opacity':1,'model-rotation':[0,0,-40],'model-scale':[1,1,1]}});
 
